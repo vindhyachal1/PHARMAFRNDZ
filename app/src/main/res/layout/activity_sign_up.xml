@@ -77,15 +77,11 @@
                     android:id="@+id/spinner1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/city"
                     android:background="@drawable/roundedgeedittext"
-                    android:maxLines="1"
                     android:layout_marginTop="30dp"
                     android:textColor="@color/white"
-                    android:textColorHint="@color/white"
                     android:spinnerMode="dropdown"
-                    android:singleLine="true" />
-
+                    />
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -126,14 +122,15 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
                     android:layout_marginTop="20dp"
-                    android:text="Have not account yet?"
+                    android:text="Already have an account?"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/green"
+                    android:id="@+id/textview1"
                     android:layout_marginTop="20dp"
-                    android:text="Create Account"/>
+                    android:text="Login"/>
             </LinearLayout>
 
         </LinearLayout>
