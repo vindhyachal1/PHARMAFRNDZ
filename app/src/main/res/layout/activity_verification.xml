@@ -30,21 +30,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/black"
-                android:textColor="@color/white"
-                android:text="Welcome"
-                android:gravity="center"
-                />
+
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/logo1"/>
+                android:src="@drawable/smile1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Awesome, Thanks!"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"/>
 
 
 
@@ -52,11 +54,11 @@
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/phone_number"
+                android:hint="Enter Mobile Number"
                 android:textAlignment="center"
                 android:background="@drawable/roundedgeedittext"
                 android:maxLines="1"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="100dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:singleLine="true" />
@@ -68,7 +70,7 @@
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/prompt_password"
+                android:hint="Enter OTP"
                 android:imeActionId="@+id/login"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:layout_marginTop="20dp"
@@ -81,32 +83,42 @@
                 android:maxLines="1"
                 android:singleLine="true" />
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/checkbox"
-                    android:layout_alignParentLeft="true"/>
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
+                    android:id="@+id/textview2"
+                    android:layout_gravity="center_horizontal"
                     android:layout_marginTop="20dp"
-                    android:text="Remember me"
-                    android:layout_toRightOf="@+id/checkbox"
+                    android:text="We've sent the confirmation code to your phone."
+
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
-                    android:layout_marginTop="20dp"
-                    android:text="Forget your password?"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_gravity="center_horizontal"
+                    android:text="please check your inbox"
+                    />
 
-            </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textview3"
+                    android:textSize="20dp"
+                    android:text="Resend"
+                    />
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/email_sign_in_button"
@@ -114,7 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
+                android:text="@string/createaccount"
                 android:textColor="@color/white"
                 android:background="@drawable/roundedge"
                 android:textStyle="bold" />
@@ -128,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
                     android:layout_marginTop="20dp"
-                    android:text="Have not account yet?"
+                    android:text="Already have an account?"
                     />
                 <TextView
                     android:id="@+id/createaccount"
@@ -136,7 +148,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:textColor="@color/green"
-                    android:text="Create Account"/>
+                    android:text="Login"/>
             </LinearLayout>
 
         </LinearLayout>
