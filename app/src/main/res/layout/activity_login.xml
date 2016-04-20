@@ -109,7 +109,7 @@
             </RelativeLayout>
 
             <Button
-                android:id="@+id/email_sign_in_button"
+                android:id="@+id/btnLogin"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -131,7 +131,7 @@
                 android:text="Have not account yet?"
                 />
             <TextView
-                android:id="@+id/createaccount"
+                android:id="@+id/btnLinkToRegisterScreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
