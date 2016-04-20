@@ -1,9 +1,9 @@
 package com.example.srkg.pharmafrndz;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class Verification extends AppCompatActivity {
+public class Verification extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
